@@ -96,8 +96,8 @@ public class ExerciceSlidershow extends JFrame {
 		cardpanel.setLayout(cardlayout);
 		panel.add(cardpanel, BorderLayout.CENTER);
 		
-		slideimg1 = new ImageIcon("C:/Users/Ordinateur/workspaceJEE/TPIHM/bin/org/ihm/tp1/icon1.png");
-        slideimg2 = new ImageIcon("C:/Users/Ordinateur/workspaceJEE/TPIHM/bin/org/ihm/tp1/icon4.jpg");
+		slideimg1 = new ImageIcon("C:/Users/Ordinateur/workspaceJEE/ExerciceSlidershow/src/images/icon1.png");
+        slideimg2 = new ImageIcon("C:/Users/Ordinateur/workspaceJEE/ExerciceSlidershow/src/images/icon4.jpg");
         JLabel label1 = new JLabel(slideimg1);
         JLabel label2 = new JLabel(slideimg2);
         cardpanel.add(label1);
@@ -107,13 +107,13 @@ public class ExerciceSlidershow extends JFrame {
 		btnpanel.setBorder(BorderFactory.createMatteBorder(5, 5, 5, 5, Color.cyan));
 		BufferedImage imgprev = null;
         try {
-            imgprev = ImageIO.read(new File("C:/Users/Ordinateur/workspaceJEE/TPIHM/bin/org/ihm/tp1/icon3.png"));
+            imgprev = ImageIO.read(new File("C:/Users/Ordinateur/workspaceJEE/ExerciceSlidershow/src/images/icon3.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         BufferedImage imgnext = null;
         try {
-            imgnext = ImageIO.read(new File("C:/Users/Ordinateur/workspaceJEE/TPIHM/bin/org/ihm/tp1/icon2.png"));
+            imgnext = ImageIO.read(new File("C:/Users/Ordinateur/workspaceJEE/ExerciceSlidershow/src/images/icon2.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
