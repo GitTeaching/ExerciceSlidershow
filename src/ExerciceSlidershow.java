@@ -67,7 +67,9 @@ public class ExerciceSlidershow extends JFrame {
 		JButton login = new JButton("Login");
 		login.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(username.getText().equals("Username") && password.getText().equals("Password"))
+				char[] correctPassword = {'P', 'a', 's', 's', 'w', 'o', 'r', 'd'};
+				
+				if(username.getText().equals("Username") && Arrays.equals(correctPassword, password.getPassword()))
 				{
 					getContentPane().removeAll();
 					initJFrame();
